@@ -1,0 +1,11 @@
+SidebarChat.css
+/* Path: copilot_test\src\SidebarChat.css */
+/* Compare this snippet from copilot_test\src\App.css: */
+.app {
+  display: flex;
+  height: 100vh;
+}
+.app__body {
+  display: flex;
+  flex: 1;
+}

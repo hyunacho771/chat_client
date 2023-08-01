@@ -1,0 +1,6 @@
+export const actionTypes = {
+  SET_USER: "SET_USER",
+  SET_MESSAGES: "SET_MESSAGES",
+  SET_CURRENT_CHAT: "SET_CURRENT_CHAT",
+  SET_CHAT_LIST: "SET_CHAT_LIST",
+};
