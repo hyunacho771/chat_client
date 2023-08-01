@@ -2,11 +2,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login.js";
-import Chat from "./pages/Chat.js";
 import Sidebar from "./components/Sidebar.js";
-import { useStateValue } from "./StateProvider.js";
-import { actionTypes } from "./actionTypes.js";
+import Chat from "./components/Chat.js";
 import { useEffect } from "react";
 import axios from "./axios.js";
 import Pusher from "pusher-js";
