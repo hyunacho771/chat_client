@@ -1,26 +1,12 @@
 //App.js
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar.js";
 import Chat from "./components/Chat.js";
 import { useEffect } from "react";
 import axios from "./axios.js";
 import Pusher from "pusher-js";
 import { useState } from "react";
-// function App() {
-//   return (
-//     <div className="app">
-//       <Router>
-//         <Routes>
-//           <Route exact path="/" element={Login} />
-//           <Route path="/rooms/:roomId" element={Chat} />
-//         </Routes>
-//       </Router>
-//     </div>
-//   );
-// }
-// export default App;
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -37,7 +23,6 @@ function App() {
     const channel = pusher.subscribe("messages");
     channel.bind("inserted", (newMessage) => {
       setMessages([...messages, newMessage]);
-      // alert(JSON.stringify(newMessage));
     });
     return () => {
       channel.unbind_all();
